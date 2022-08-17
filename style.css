@@ -1,0 +1,126 @@
+@charset "UTF-08";
+:root{
+    --bg-color:hsl(225, 100%, 94%);
+    --bg-card-color:hsl(225, 100%, 100%);--buttons: hsl(245, 75%, 52%);
+    --bg-color2:hsla(225, 96%, 90%, 0.146);
+    --font-color:hsl(223, 47%, 23%);
+    --font-p-color: hsl(224, 23%, 55%);  
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.card-container{
+    display: flex;
+    min-width: 100vw;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+}
+.main-container{
+  
+    max-width:320px;
+    max-height: 100%;
+    background-color: var(--bg-card-color);
+    border-radius: 10px;
+    box-shadow:1px 13px 10px 2px rgba(0, 0, 0, 0.072);
+}
+.card-image{
+    max-width: 100%;
+    max-height:100%;
+    border-top-left-radius:10px;
+    border-top-right-radius: 10px;
+}
+.illustration{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius:10px;
+    border-top-right-radius: 10px;
+}
+
+.card-content{
+    padding: 1rem;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+h1, h2, p, button{
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.text, .prices, button{
+    margin-top: 20px; 
+    color: var(--font-p-color);
+}
+h1{
+    font-weight:bold;
+    color: var(--font-color);
+}
+h2{
+    font-size: 15px;
+    font-weight:bold;
+    color: var(--font-color);
+}
+p{
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+.prices > a{
+    color: var(--buttons);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.prices{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap:20px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color:var(--bg-color2)
+}
+.prices a:hover{
+    text-decoration: underline;
+}
+.payment{
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    padding:13px;
+    border-radius: 10px;
+    box-shadow: 1px 10px 13px 6px hsla(226, 57%, 85%, 0.852);
+    background-color: var(--buttons);
+    color: white;
+    border: none;
+
+}
+.payment:hover{
+    cursor: pointer;
+    background-color:rgba(0, 0, 255, 0.398) ;
+    
+}
+.attribution{
+    margin-top:5vh;
+}
+p > a{
+    text-decoration: none;
+    color: var(--font-p-color);
+    font-weight: 700;
+    font-size: 13px;
+   cursor: pointer;
+}
+
+p a:hover{   
+    color:black;
+}
+
+
+
+
+
